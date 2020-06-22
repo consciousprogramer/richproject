@@ -1,0 +1,216 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clion Free Consultation</title>
+
+    <!-- css stylesheet -->
+    <link rel="stylesheet" href={% static "clioncare/css/hairform.css" %}>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="progress w-75 top_progress_bar">
+        <div class="progress-bar bg-primary" role="progressbar" style="width:0%;">
+
+        </div>
+      </div>
+    </div>
+    <div class="all_container">
+      <!-- this is fixed -->
+      <span class="question_header">Welcome! To Clion Care Free Hair Consultation</span>
+      <hr>
+
+      <!--  -->
+      <!-- the welcome pagge -->
+      <div class="slidables container0">
+        <div class="welcome">
+          <img src={% static "clioncare/images/WELCOME32.png" %} id = "all_poster" alt="Welcome img">
+          <img src={% static "clioncare/images/WELCOME33.png" %} id = "mob_only_poster" alt="mob_only">
+        </div>
+      </div>
+
+      <!-- Ask gender -->
+      <div class="slidables container1">
+        <div class="male">
+          <img src={% static "clioncare/images/black-male.png" %} alt="male">
+          <p>Male</p>
+        </div>
+        <div class="female">
+          <img src={% static "clioncare/images/brown-female.png" %} alt="">
+          <p>female</p>
+        </div>
+      </div>
+
+      <!-- Ask hair Color -->
+      <div class="slidables container2">
+        <div class="black-male">
+          <img src={% static "clioncare/images/black-male.png" %} alt="">
+          <p>Black</p>
+        </div>
+        <div class="brown-male">
+          <img src={% static "clioncare/images/brown-male.png" %} alt="">
+          <p>Brown</p>
+        </div>
+      <div class="blond-male">
+          <img src={% static "clioncare/images/blond-male.png" %} alt="">
+          <p>Blond</p>
+        </div>
+        <div class="red-male">
+          <img src={% static "clioncare/images/blond-male.png" %} alt="">
+          <p>White</p>
+        </div>
+      </div>
+
+
+      <!-- Ask hair loss pattern -->
+      <div class="slidables container3">
+        <div class="initial">
+          <img src={% static "clioncare/images/initial.png" %} alt="">
+          <p>Small Receding HairLine</p>
+        </div>
+        <div class="mshape">
+          <img src={% static "clioncare/images/mshape.png" %} alt="">
+          <p>Big Receding HairLine</p>
+        </div>
+        <div class="patach">
+          <img src={% static "clioncare/images/patach.png" %} alt="">
+          <p>Crown</p>
+        </div>
+        <div class="higway">
+          <img src={% static "clioncare/images/higway.png" %} alt="">
+          <p>Big Crown</p>
+        </div>
+        <div class="allclear">
+          <img src={% static "clioncare/images/allclear.png" %} alt="">
+          <p>Verge Of Total HairLoss</p>
+        </div>
+        <div class="nohair">
+          <img src={% static "clioncare/images/nohair.png" %} alt="">
+          <p>Complete HairLoss</p>
+        </div>
+      </div>
+
+      <!-- scince when |||| no grid veiw-->
+      <div class="slidables container4">
+          <div class="one">
+            <h3>1</h3>
+          </div>
+          <div class="two">
+            <h3>2</h3>
+          </div>
+          <div class="three">
+            <h3>3</h3>
+          </div>
+          <div class="four">
+            <h3>4</h3>
+          </div>
+          <div class="five">
+            <h3>5</h3>
+          </div>
+          <div class="six">
+            <h3>6</h3>
+          </div>
+          <div class="seven">
+            <h3>7</h3>
+          </div>
+          <div class="eight">
+            <h3>8</h3>
+          </div>
+          <div class="nine">
+            <h3>9</h3>
+          </div>
+          <div class="more_than10">
+            <h5>10 Or More Than 10 Years</h5>
+          </div>
+
+          <!-- <form class = "scince_when_form" style="border-radius: 25px;">
+            <label for="scince_years">Enter Number In Years: </label>
+            <input type="text" id = "scince_years" name="scince_years" value="">
+          </form> -->
+      </div>
+
+      <!-- transplant before -->
+      <div class="slidables container5">
+        <div class="had_transplant">
+          <h1>YES</h1>
+        </div>
+        <div class="not_had_transplant">
+          <h1>NO</h1>
+        </div>
+      </div>
+
+      <!-- How bad Do You feel -->
+      <div class="slidables container6">
+        <div class="really_bad">
+          <p>I Feel Really Bad For My HairLoss</p>
+        </div>
+        <div class="bad">
+          <p>I Feel Bad For My HairLoss</p>
+        </div>
+        <div class="average">
+          <p>Average</p>
+        </div>
+        <div class="not_that_bad">
+          <p>I Do Not Feel That bad</p>
+        </div>
+      </div>
+
+      <!--when to Begin  -->
+      <div class="slidables container7">
+        <div class="in_3_months">
+          <p>In Less Than 3 Months</p>
+        </div>
+        <div class="in_6_months">
+          <p>In Less Than 6 Months</p>
+        </div>
+        <div class="in_12_months">
+          <p>In Less Than A Year</p>
+        </div>
+        <div class="information_only">
+          <p>I Want Information Only</p>
+        </div>
+      </div>
+
+      <!--End Form-->
+      <div class="slidables container8">
+        <div class="end_form_container">
+          <form>
+            <label for="fname">Enter Your Full Name</label>
+            <input type="text" name="fname" id = "fname" value="" required>
+            <label for="age">Enter Your Age</label>
+            <input type="number" name="age" id = "age" value="" required>
+            <label for="e_mail">Enter E-mail ID</label>
+            <input type="email" name="email" id = "email" value="" required>
+            <label for="mob_no">Enter Mobile Number</label>
+            <input type="number" name="mob_no" id = "mob_no" value="" required>
+          </form>
+        </div>
+      </div>
+
+      <button type="button" id = 'back-btn' class="btn btn-outline-dark back-btn">Back</button>
+      <button type="button" id = 'next-btn' class="btn btn-success next-btn">Next</button>
+      <!-- all_container end div -->
+    </div>
+
+    <div class="container-fluid status_div">
+      <div class="row">
+        <div class="col-lg-8">
+          <h4 id = "display_status">Submitting your form please wait....</h4>
+          <a href={% url "clioncare:index" %} id = "anchor">Now Click Here</a>
+        </div>
+      </div>
+
+    </div>
+
+    <script src={% static "clioncare/js/hairform.js" %} charset="utf-8"></script>
+  
+  </body>
+</html>

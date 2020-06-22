@@ -1,0 +1,172 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    {% block title %}
+    {% endblock %}
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href={% static "clioncare/css/layout_styles.css" %}>
+    {% block css %}
+    {% endblock %}
+  </head>
+  <body>
+
+    <div class="container-fluid cont-1" id = "home_redirect">
+
+      <!-- NAVBAR ------------------------------------------------->
+      <nav class="navbar navbar-expand-lg fixed-top navbar-light ">
+        <a class="navbar-brand" href="https://clioncare.com/"><img src={% static "clioncare/images/Logo_CLION.png" %} alt="clion_logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="http://127.0.0.1:8000/clioncare/#home_redirect">Home<span class="sr-only">(current)</span></a>
+            </li>
+            {% if user.is_authenticated %}
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown_1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                welcome, {{ request.user }}
+              </a>
+              <div class="dropdown-menu bg-light" aria-labelledby="navbarDropdown_1">
+                <a class="dropdown-item" href={% url "clioncare:logout" %}>Logout</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">{{ request.user }} Profile</a>
+              </div>
+            </li>
+            {% else %}
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown_1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Accounts
+              </a>
+              <div class="dropdown-menu bg-light" aria-labelledby="navbarDropdown_1">
+                <a class="dropdown-item" href={% url "clioncare:createuser" %}>Create Account</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href={% url "clioncare:login" %}>Login</a>
+              </div>
+            </li>
+
+            {% endif%}
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown_2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Hair Translant
+              </a>
+              <div class="dropdown-menu bg-light" aria-labelledby="navbarDropdown_2">
+                <a class="dropdown-item btn" href="#">About Hair Translant</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Methods Of Hair Transplant</a>
+                <a class="dropdown-item" href="#">FUT Method</a>
+                <a class="dropdown-item" href="#">FUE Method</a>
+                <a class="dropdown-item" href="#">PRP Method</a>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link free_btn1 btn btn-outline-warning" data-toggle="tooltip" title="Click, To Bring Your Hair Back!" data-placement="bottom" href="{% url "clioncare:costpage" %}" style="color:black;">Free Consultation</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="http://127.0.0.1:8000/clioncare/#contact_section">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color:black;" href="{% url "clioncare:costpage" %}">Cost <span style="font-family:sans-serif;color:red;font-size: 0.7em;background-color:;padding: 0 0;border-radius:3px;">New</span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Flash messages from django -------------------------------->
+      {% if messages %}
+      <div class="alert alert-success alert-dismissible fade show django_alert" role="alert">
+          {% for message in messages %}
+          {{ message }}
+          {% endfor %}
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      </div>
+      {% endif %}
+
+
+      {% block body%}
+
+      {% endblock %}
+
+      <!-- popup form -->
+    <a class="open-button" onclick="openForm()"><img src={% static "clioncare/images/question.png" %} alt=""> </a>
+    <div class="form-popup" id="myForm">
+      <form action="/clioncare/chatform" method="post" class="form-container">
+        <h4>Leave Us A Message!</h4>
+        {% csrf_token %}
+        <label for="email"><b>Email</b></label>
+        <input type="email" placeholder="Enter Email" name="email" required>
+
+        <label for="fullname"><b>Full Name</b></label>
+        <input type="text" placeholder="Full Name" id = "fullname" name="fullname" required>
+
+        <label for="mob_no"><b>Mobile Number</b></label>
+        <input type="number" placeholder="Mobile Number" id = "mob_no" name="mob_no" required>
+
+        <label for="message"><b>Your Message</b></label>
+        <textarea name="message" id = "message" rows="3" cols="27"></textarea>
+
+        <button type="submit" class="btno btn btn-success">Submit</button>
+        <button type="button" class="btno btn btn-outline-danger" onclick="closeForm()">Close</button>
+      </form>
+    </div>
+
+    <!-- TOOLTIP SCRIPT -->
+    <script>
+      $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
+
+    <!-- POPUP script -->
+    <script>
+      function openForm() {
+        document.getElementById("myForm").style.bottom = "20px";
+      }
+
+      function closeForm() {
+        document.getElementById("myForm").style.bottom = "-650px";
+      }
+    </script>
+
+    <!-- COLLAPEABLE script -->
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight){
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
+
+
+    <!-- HTML DOCUMENT BACKBONE SCRIPT  -->
+    <script src={% static "clioncare/js/layout_js.js" %} charset="utf-8"></script>
+    {% block js %}
+    {% endblock %}
+  </body>
+</html>

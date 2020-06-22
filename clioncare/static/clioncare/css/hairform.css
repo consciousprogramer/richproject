@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap');
+*{
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Montserrat', sans-serif;
+  background: rgb(53,210,129);
+  background: -moz-linear-gradient(90deg, rgba(53,210,129,1) 0%, rgba(68,252,213,1) 50%, rgba(49,213,200,1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(53,210,129,1) 0%, rgba(68,252,213,1) 50%, rgba(49,213,200,1) 100%);
+  background: linear-gradient(90deg, rgba(53,210,129,1) 0%, rgba(68,252,213,1) 50%, rgba(49,213,200,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#35d281",endColorstr="#31d5c8",GradientType=1);
+}
+#all_poster{
+  display: flex;
+}
+#mob_only_poster{
+  display: none;
+}
+.question_header{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 10px rgba(150,150,150,1);
+  margin: 2rem 0;
+}
+p{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  text-shadow: 1px 1px 10px rgba(150,150,150,1);
+}
+.all_container{
+  text-align: center;
+}
+.back-btn{
+  position: absolute;
+  bottom: 1%;
+  left: 18%;
+  margin: 0.3rem 7rem;
+  width: 8rem;
+}
+.next-btn{
+  position: absolute;
+  bottom: 1%;
+  right: 18%;
+  margin: 0.3rem 7rem;
+  width: 8rem;
+}
+/* .scince_when_form{
+  margin: 5rem 2rem;
+  padding: 2rem;
+} */
+.scince_when_container{
+  padding: 1rem;
+  text-align: center;
+
+}
+.end_form_container{
+  padding: 2.4rem;
+  text-align: center;
+  border-radius: 25px;
+  background-color: white;
+  width:50%;
+}
+
+input[type=text],input[type=number],input[type=email]{
+  width: 90%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+/* -------------------------------------All Fixed properties are DONE!!!-------------------- */
+
+
+
+/* -------------------------------------containers properties------------------------------ */
+.container1,.container2,.container5,.container4,.container6,.container7{
+  display:grid;
+  padding: 15px 0;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: auto auto;
+  grid-row: auto;
+  grid-gap: 2rem 5rem;
+  /* border: 2px solid grey; */
+  height:92%;
+  position: relative;
+}
+.container3{
+  position: relative;
+  display:grid;
+  padding: 15px 0;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: auto auto auto;
+  grid-row: auto;
+  grid-gap: 2rem 5rem;
+  /* border: 2px solid grey; */
+  height:92%;
+}
+.container1>div,.container2>div,.container3>div,.container4>div,.container5>div,.container6>div,.container7>div{
+  padding: 10px;
+  box-shadow:0 8px 16px 0 rgba(0, 0, 0, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  border-radius: 25px;
+  width: 150px;
+  border: 2px solid orange;
+  cursor: pointer;
+  background-color: white;
+}
+
+.container1>div:hover,.container2>div:hover,.container3>div:hover,.container4>div:hover,.container5>div:hover,.container6>div:hover,.container7>div:hover{
+  border: 2px solid rgba(0,0,0,1);
+}
+
+/* .container4{
+  display:flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  align-content: space-around;
+} */
+.container8{
+  display:flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height:92%;
+}
+.container0{
+  display: flex;
+  width: 100%;
+  text-align: center;
+  justify-content:center;
+  align-items: center;
+  height:92%;
+}
+
+/* ------------------------------container properties end-------------------------------------- */
+
+/* --------------------------------grid assignment--------------------------------------------- */
+.welcome{
+  display:flex;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+}
+.welcome>img{
+  width: 35%;
+}
+/* container1 gender*/
+.male{
+  grid-column: 1 / 1 / span1 / span1;
+}
+.female{
+  grid-column: 1 / 2 / span1 / span1;
+}
+/* container2 hair color*/
+.black-male{
+  grid-column: 1 / 1 / span1 / span1;
+}
+.brown-male{
+  grid-column: 1 / 2 / span1 / span1;
+}
+.blond-male{
+  grid-column: 2 / 1 / span1 / span1;
+}
+.red-male{
+  grid-column: 2 / 2 / span1 / span1;
+}
+/* container3 pattern */
+.initial{
+  grid-column: 1 / 1 / span1 / span1;
+}
+.mshape{
+  grid-column: 1 / 2 / span1 / span1;
+}
+.patach{
+  grid-column: 2 / 1 / span1 / span1;
+}
+.higway{
+  grid-column: 2 / 2 / span1 / span1;
+}
+.allclear{
+  grid-column: 3 / 1 / span1 / span1;
+}
+
+/* container5 had transplant */
+.had_transplant{
+  grid-column: 1 / 1 / span1 / span1;
+}
+.not_had_transplant{
+  grid-column: 1 / 2 / span1 / span1;
+}
+/* container6 how bad */
+.really_bad{
+  grid-column: 1 / 1 / span1 / span1;
+}
+.bad{
+  grid-column: 1 / 2 / span1 / span1;
+}
+.average{
+  grid-column: 2 / 1 / span1 / span1;
+}
+.not_that_bad{
+  grid-column: 2 / 2 / span1 / span1;
+}
+/* container7 when to Begin */
+.in_3_months{
+  grid-column: 1 / 1 / span1 / span1;
+}
+.in_6_months{
+  grid-column: 1 / 2 / span1 / span1;
+}
+.in_12_months{
+  grid-column: 2 / 1 / span1 / span1;
+}
+.information_only{
+  grid-column: 2 / 2 / span1 / span1;
+}
+.one{
+  grid-column: 1 / 1 / span1 / span1;
+}
+.two{
+  grid-column: 1 / 2 / span1 / span1;
+}
+.three{
+  grid-column: 1 / 3 / span1 / span1;
+}
+.four{
+  grid-column: 1 / 4 / span1 / span1;
+}
+.five{
+  grid-column: 1 / 5 / span1 / span1;
+}
+.six{
+  grid-column: 2 / 1 / span1 / span1;
+}
+.seven{
+  grid-column: 2 / 2 / span1 / span1;
+}
+.eight{
+  grid-column: 2 / 3 / span1 / span1;
+}
+.nine{
+  grid-column: 2 / 4 / span1 / span1;
+}
+.more_than10{
+  grid-column: 2 / 5 / span1 / span1;
+}
+.status_div{
+  padding: 2rem 4rem;
+  display: none;
+}
+/* --------------------------------grid assignment END--------------------------------------------- */
+
+/* progress-bar */
+.top_progress_bar{
+  width: 80%;
+  margin: auto;
+}
+
+/* ---------------------------------MEDIA (900-PX)-------------------------------------------------- */
+@media (max-width : 1081px) {
+  #all_poster{
+    display: none;
+  }
+  #mob_only_poster{
+    display: flex;
+  }
+  .question_header{
+    padding: 2rem 0.7rem;
+    font-size: 1.5rem;
+  }
+  p{
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .container1,.container2,.container3,.container4,.container5,.container6,.container7{
+    display:grid;
+    justify-content: space-evenly;
+    align-content:center;
+    grid-template-columns: 40% 40%;
+    grid-row: auto;
+    grid-gap:2rem;
+  }
+  .container1>div,.container2>div,.container3>div,.container4>div,.container5>div,.container6>div,.container7>div{
+    padding: 10px;
+    box-shadow:0 8px 16px 0 rgba(0, 0, 0, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    border-radius: 25px;
+    width: 90%;
+  }
+  .container1>div:hover,.container2>div:hover,.container3>div:hover,.container4>div:hover,.container5>div:hover,.container6>div:hover,.container7>div:hover{
+    width: 100%;
+    border: 2px solid rgba(0,0,0,1);
+    z-index: 4;
+  }
+  /* welcome --------------------------------*/
+  .container0{
+    display: flex;
+    text-align: center;
+    width: 100%;
+  }
+  .welcome{
+    width: 100%;
+  }
+  .welcome>img{
+    width: 80%;
+  }
+  /* welcome end---------------------------- */
+  .back-btn{
+    position: absolute;
+    float:left;
+    bottom: 2%;
+    left: 4%;
+    margin: 0.3rem 1rem;
+    width: 6rem;
+  }
+  .next-btn{
+    position: absolute;
+    bottom: 2%;
+    right: 4%;
+    margin: 0.3rem 1rem;
+    width: 6rem;
+  }
+  .end_form_container{
+    padding: 2rem;
+    border-radius: 20px;
+    width:90%;
+  }
+}
+/* ---------------------------------MEDIA (900----900-PX)-------------------------------------------------- */
+/* ---------------------------------MEDIA (600----600-PX)-------------------------------------------------- */
+@media (max-width : 730px) {
+  #all_poster{
+    display: none;
+  }
+  #mob_only_poster{
+    display: flex;
+  }
+  .question_header{
+    padding: 1rem 0.5rem;
+    font-size: 1.5rem;
+  }
+  p{
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+  .container1,.container2,.container3,.container4,.container5,.container6,.container7{
+    display:grid;
+    justify-content:center;
+    align-content:center;
+    grid-template-columns:80%;
+    grid-row: auto;
+    grid-gap:1rem 0.5rem;
+  }
+  .container1>div,.container2>div,.container3>div,.container3>div,.container5>div,.container6>div,.container7>div{
+    padding: 10px 5px;
+    box-shadow:0 8px 16px 0 rgba(0, 0, 0, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+    width: 90%;
+  }
+  .container1>div:hover,.container2>div:hover,.container3>div:hover,.container4>div:hover,.container5>div:hover,.container6>div:hover,.container7>div:hover{
+    width: 95%;
+    border: 2px solid rgba(0,0,0,1);
+    z-index: 5;
+  }
+
+  .container1>div>img,.container2>div>img,.container3>div>img,.container5>div>img,.container6>div>img,.container7>div>img{
+    float: left;
+    padding-left: 10px;
+  }
+  .container1>div>p{
+    vertical-align: middle;
+    /* float: right; */
+  }
+  /* welcome --------------------------------*/
+  .container0{
+    display: flex;
+    text-align: center;
+    width: 100%;
+  }
+  .welcome{
+    width: 100%;
+  }
+  .welcome>img{
+    width: 100%;
+  }
+  /* welcome end---------------------------- */
+  .back-btn{
+    position: fixed;
+    bottom: 2%;
+    left: 1%;
+    margin: 0.3rem 0.5rem;
+    width: 6rem;
+  }
+  .next-btn{
+    position: fixed;
+    bottom: 2%;
+    right: 1%;
+    margin: 0.3rem 0.5rem;
+    width: 6rem;
+  }
+  .end_form_container{
+    padding: 2rem;
+    border-radius: 20px;
+    width:95%;
+  }
+  .top_progress_bar{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+}

@@ -1,0 +1,202 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background: rgb(53,210,129);
+  background: -moz-linear-gradient(90deg, rgba(53,210,129,1) 0%, rgba(68,252,213,1) 50%, rgba(49,213,200,1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(53,210,129,1) 0%, rgba(68,252,213,1) 50%, rgba(49,213,200,1) 100%);
+  background: linear-gradient(90deg, rgba(53,210,129,1) 0%, rgba(68,252,213,1) 50%, rgba(49,213,200,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#35d281",endColorstr="#31d5c8",GradientType=1);
+
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+.navbar{
+  transition: all;
+  transition-duration: 0.4s;
+}
+.navbar-brand>img{
+  margin: 0 1rem 0 2rem;
+  width: 150px;
+  transition: all;
+  transition-duration: 0.5s;
+}
+.nav-item{
+  margin: 0 5px;
+}
+/* -----------------------------------POPUP BUTTON CSS------------------------------------------
+------------------------------------------------------------------------------------------------- */
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+/* @keyframes slideup {
+  0%{bottom: -300px}
+  100%{bottom: 20px}
+} */
+/* @keyframes slidedown {
+  0%{bottom: 20px}
+  100%{bottom: -300px}
+} */
+.open-button {
+  margin-right:5px;
+  cursor: pointer;
+  opacity: 0.7;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 80px;
+  z-index: 1000;
+}
+.open-button>img{
+  width: 100%;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  transition: bottom 0.3s ease-out;
+  position: fixed;
+  bottom: -650px;
+  right: 10px;
+  border-radius: 20px 0 0 20px;
+  z-index: 2000;
+  text-align: left;
+}
+
+/* Add styles to the form container */
+.form-container {
+  z-index: 2000;
+  max-width: 300px;
+  padding: 20px;
+  border-radius: 20px 0 0 20px;
+  background: rgb(53,111,210);
+  background: -moz-linear-gradient(90deg, rgba(53,111,210,1) 12%, rgba(77,68,252,1) 50%, rgba(62,49,213,1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(53,111,210,1) 12%, rgba(77,68,252,1) 50%, rgba(62,49,213,1) 100%);
+  background: linear-gradient(90deg, rgba(53,111,210,1) 12%, rgba(77,68,252,1) 50%, rgba(62,49,213,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#356fd2",endColorstr="#3e31d5",GradientType=1);
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  border-radius: 5px;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  border:1px solid purple;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btno {
+  margin:0 10px;
+
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+/* --------------------COST PAGE CSS---------------------------------------*/
+.page_container{
+  margin-top: 4rem;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+}
+.page_heading{
+  margin-top: 8rem;
+  margin-bottom: 4rem;
+  text-shadow: 0 0 3px white;
+}
+.left_section{
+  background-color: white;
+  margin-right: 1rem;
+  padding: 2rem 0;
+  border-radius: 0 30px 30px 0;
+  /* filter: drop-shadow(1px 1px 5px white); */
+}
+.left_section_heading{
+  text-align: left;
+  font-family: "Caladea";
+  padding-left: 2rem;
+  padding-right: 3rem;
+  margin-top:1rem;
+  margin-bottom: 2rem;
+  text-shadow: 0 0 1px lightblue;
+}
+.left_section_content{
+  text-align: left;
+  font-family: "Caladea";
+  padding: 1rem 1rem 1rem 2rem;
+}
+.faq_questions{
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+
+}
+.the_question_div{
+  text-align: left;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+.the_question_div>button{
+  width: 100%;
+}
+.welcome_image_div{
+  margin:0;
+  padding: 0;
+  /* object-fit:cover; */
+}
+.welcome_image_div>img{
+  width: 125%;
+  border-radius: 30px 0 0 30px;
+}
+
+/* --------------------------------page2----------------------------------- */
+.page_2_parent{
+  margin-top: 8rem;
+  padding-top: 2rem;
+}
+.page_2_heading{
+  padding-left: 3rem;
+  padding-right: 3rem;
+  margin-bottom: 4rem;
+
+}
+.video_cont>video{
+  border-radius: 20px;
+}
+@media (max-width: 920px) {
+  .welcome_image_div{
+    margin:2rem 0.5rem;
+    padding: 1rem 0.5rem;
+    /* object-fit:cover; */
+  }
+  .welcome_image_div>img{
+    width: 100%;
+    border-radius: 10px 10px 10px 10px;
+  }
+
+
+  /* -------------------------------- */
+  .page_2_parent,{
+    margin-top: 3rem;
+    padding-top: 1rem;
+    width: 100%;
+  }
+  .page_2_heading{
+    width: 100%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .video_cont>video{
+    width: 100%;
+    border-radius: 20px;
+  }
+}

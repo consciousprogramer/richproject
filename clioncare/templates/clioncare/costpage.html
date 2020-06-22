@@ -1,0 +1,146 @@
+{% extends "clioncare/layout.html" %}
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href={% static "clioncare/css/costpage.css" %}>
+{% endblock %}
+{% block body %}
+
+
+
+<div class="container-fluid page_container">
+        <div class="container-fluid page_heading">
+          <h1 style="color:white;"><strong>🎉 Welcome! To Clion Care Hair Analysis™</strong></h1>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 left_section">
+            <div class="left_section_heading">
+              <h3>
+                  We,Are The First And Only One In Ahemdabadh To Provide Our Coustomers Advance Hair Analysis™ online,
+                  Free Of Cost But For Limited Period Of Time So Take Full Advantage Of This.
+              </h3>
+            </div>
+            <div class="left_section_content">
+              <h2>Below Are Some Frequently Asked Question(FAQs)</h2>
+              <hr>
+              <div class="faq_questions">
+                <div class="the_question_div">
+                  <button data-toggle="collapse" data-target="#question1" class="btn btn-outline-primary">What Is This Hair Analysis??</button>
+                  <div class="collapse" id="question1">
+                    <p>In challenging times like these where world is standing still clion care, is comited to satisfy it's coustomers need, this hair analysis is just another stepping stone in that direction now by using advanced webapp, With just few clicks you can get free qoute from our expert while sitting safe in home.</p>
+                  </div>
+
+                </div>
+                <div class="the_question_div" >
+                  <button data-toggle="collapse" data-target="#question2" class="btn btn-outline-primary">Why I Have To Do Online Hair<br> Analysis To Get Cost Estimate??</button>
+                  <div class="collapse" id = "question2">
+                    <p>Hair transplant is a process which differ from person to person as according to their needs and current hair loss condition,the cost depends upon number of grafts Transplanted to the patient which depends upon how bad the hair loss, so before sending you a cost estimate it is must for our experts to know your hair condition properly, and hence this hair analysis is very important to take to get proper cost estimate. </p>
+                  </div>
+                </div>
+                <div class="the_question_div">
+                  <button data-toggle="collapse" data-target="#question3" class="btn btn-outline-primary">On What Things Cost Depend Upon??</button>
+                  <div class="collapse" id = "question3">
+                    <p>Cost of hair trans plant depends upon the number of grafts(hiar roots) transplanted to your head and on some extra precautionary measures which can me must for one patient but absolutely necassary for another depending upon the skin senstivity.</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 welcome_image_div">
+            <img src={% static "clioncare/images/welcome3.png" %} alt="welcome image">
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid page_2_parent">
+        <div class="container-fluid page_2_heading">
+          <h1>Getting Online Consultation Is Easy As Never Before!</h1>
+          <h4>See The Video Below, Showing How To Take OurFree Consultation.</h4>
+        </div>
+        <div class="container-fluid">
+          <div class="video_cont">
+            <img src = {% static "clioncare/images/videogif.gif" %}></img>
+          </div>
+          <h3 class = "my-5"><b>You are Just one click away from getting your hair back, Click now...</b></h3>
+          <a href="{% url "clioncare:hairform" %}" class = "btn btn-large btn-warning" style = "padding:0.2rem 6rem; margin: 1rem 0 8rem 0;">Take Hair Analysis</a>
+        </div>
+      </div>
+
+
+    <div class="">
+
+    </div>
+
+      <!-- <div class="cost_head_cont">
+        <div class="cost_welcome">
+          <h1>Welcome, To Clion Care Free Advance Hair Analysis™</h1>
+        </div>
+        <div class="row" style = "margin:0">
+          <div class="col-lg-8 cost_left">
+            <div class="container-fluid clion_msg" style="text-align:left;">
+              <h4>
+                  We,Are The First And Only One In Ahemdabadh To Provide Our Coustomers Advance Hair Analysis™ online,
+                  Free Of Cost But For Limited Period Of Time So Take Full Advantage Of This.
+              </h4>
+            </div>
+            <div class="reason_section">
+
+              <div class="reason_section_header">
+                <h3>Factors Affecting The Cost Of Transplantation</h3>
+              </div>
+              <div class="reasons">
+                <ol>
+                  <li>Condition of hair loss in a patient.</li>
+                  <li>Types of techniques opted for.</li>
+                  <li>Number of grafts used.</li>
+                  <li>Area of the transplantation.</li>
+                  <li> Extra care or irregularities if occur.</li>
+
+                </ol>
+              </div>
+            </div> -->
+
+            <!-- <div class="cost_faq">
+
+
+              <div class="faq_question">
+                <button data-toggle = "collapse" data-target=".answer1" class="btn btn-outline-primary"><h5>Why I Have To Do Online Hair Analysis To Get Cost Estimate??</h5></button>
+                <div class="answer1 collapse">
+                  <p>Nowadays it is a 100% painless procedure, subjected to the local anaesthesia, And if it is being done at the right clinic and by the right doctor.</p>
+                </div>
+              </div>
+
+              <div class="faq_question">
+                <button  data-toggle = "collapse" data-target=".answer2" class="btn btn-outline-primary"><h5>What Is This Hair Analysis??</h5></button>
+                <div class="answer2 collapse">
+                  <p>Transplanted hair remains forever the life if transferred from the safe donor area.</p>
+                </div>
+              </div>
+
+              <div class="faq_question">
+                <button  data-toggle = "collapse" class="btn btn-outline-primary"data-target=".answer3"><h5>On What Things Cost Depend Upon??</h5></button>
+                <div class="answer3 collapse">
+                  <p>Hair Transplant is a surgery that involves only the skin of the scalp. It doesn’t go below the skin or come in contact with any part of the brain.</p>
+                </div>
+              </div>
+            </div> -->
+
+          <!-- </div>
+          <div class="col-lg-4 welcome_poster">
+            <img src="../images/welcome3.png" alt="welcome_poster">
+          </div>
+        </div>
+      </div> -->
+
+
+
+      <!-- parent container -->
+    </div>
+
+
+
+
+{% endblock %}
+{% block js %}
+<script src={% static "clioncare/js/costpage.js" %} charset="utf-8"></script>
+{% endblock %}

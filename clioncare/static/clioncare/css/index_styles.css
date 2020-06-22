@@ -1,0 +1,588 @@
+
+
+
+
+footer{
+  background: rgb(83,0,190);
+background: linear-gradient(90deg, rgba(83,0,190,0.6194075042126226) 0%, rgba(67,2,167,0.5801918179381127) 100%);
+  padding: 4rem 2rem;
+  margin-top: 10rem;
+}
+.timing{
+  margin-bottom: 8.5rem;
+}
+.testimonial_header{
+  margin:4rem 0 4rem 0;
+  text-align: center;
+}
+.carousel-item {
+  /* height: 100vh;
+  min-height: 350px; */
+  width: 80%;
+  margin: 3rem auto 8rem auto;
+  background: no-repeat center center scroll;
+  /*-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;*/
+}
+.testimonial_header{
+  z-index: 99999;
+}
+* {
+  box-sizing:border-box;
+}
+.container10{
+  box-sizing:border-box;
+  margin: 3rem 0;
+}
+.how_hair_loss{
+margin: 1rem;
+}
+.sub_row>div{
+  text-align: left;
+  padding: 1rem 2rem 0 2rem;
+}
+.sub_row>div>p{
+  padding:2rem 1rem;
+}
+.sub_row>div>img{
+  width: 90%;
+  border-radius: 20px;
+}
+.sub_row2>div{
+  text-align: left;
+  margin-top: 2rem;
+  /* margin-left: auto; */
+  margin-right: auto;
+  padding: 0 2rem 1rem 2rem;
+
+}
+.sub_row3>div{
+  /* text-align: left; */
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+  margin-left: 0;
+  /* margin-right:0; */
+  padding:0 2rem;
+
+}
+.sub_row3>div>img{
+  margin-left: 0;
+  width: 100%;
+
+}
+.sub_row4{
+  margin-top: 0rem;
+}
+.sub_row4_heading{
+  margin: 3rem 0 2rem 0;
+}
+.sub_row4_content{
+  margin-left: auto;
+  margin-right:auto;
+
+}
+.sub_row4_content>img{
+  width: 100%;
+}
+.map_parent_container{
+  box-sizing: border-box;
+  padding: 4rem 2rem;
+  background: white;
+}
+/* .iframe-rwd  {
+position: relative;
+padding-bottom: 65.25%;
+padding-top: 30px;
+height: 0;
+overflow: hidden;
+}
+.iframe-rwd iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 55%;
+} */
+.contact_area{
+  margin-left: 4rem;
+  padding: 2rem;
+  background: rgb(10,246,160);
+background: -moz-linear-gradient(90deg, rgba(10,246,160,1) 0%, rgba(32,236,206,1) 32%, rgba(0,185,255,1) 100%);
+background: -webkit-linear-gradient(90deg, rgba(10,246,160,1) 0%, rgba(32,236,206,1) 32%, rgba(0,185,255,1) 100%);
+background: linear-gradient(90deg, rgba(10,246,160,1) 0%, rgba(32,236,206,1) 32%, rgba(0,185,255,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0af6a0",endColorstr="#00b9ff",GradientType=1);
+  /*
+  background: rgb(33,38,208);
+  background: -moz-linear-gradient(90deg, rgba(33,38,208,1) 0%, rgba(55,55,248,1) 13%, rgba(0,212,255,1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(33,38,208,1) 0%, rgba(55,55,248,1) 13%, rgba(0,212,255,1) 100%);
+  background: linear-gradient(90deg, rgba(33,38,208,1) 0%, rgba(55,55,248,1) 13%, rgba(0,212,255,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2126d0",endColorstr="#00d4ff",GradientType=1);*/
+}
+
+
+/* Slideshow container */
+.carousel-container{
+  padding: 0;
+}
+.slideshow-container {
+  top:5rem;
+  max-width: 90%;
+  position: relative;
+  margin: auto;
+  border-radius: 20px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  right:0%;
+}
+.prev {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  left: 0%;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fadee {
+  -webkit-animation-name: fadee;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fadee;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fadee {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fadee {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
+
+
+
+
+.btw_cont{
+  position: absolute;
+  height: 500px;
+  bottom: 0;
+  z-index: 12;
+  background-color: blue;
+  padding: 2rem 0;
+}
+.btw_cont>row{
+  padding: 10px;
+}
+.curvy_edge{
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 30px 0;
+  padding: 20px;
+  align-content: center;
+}
+.curvy_edge>div>div{
+  border-radius: 0 30px;
+  background: linear-gradient(90deg,rgba(62,53,248,0.908000700280112) 12%, rgba(77,55,202,0.9640231092436975) 53%);
+  margin: 20px;
+}
+.cont-1{
+  padding: 0;
+  z-index: -9;
+}
+.page-1{
+  z-index: -8;
+}
+.cont-3{
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 10
+}
+.cont-3>img{
+  width: 100%;
+}
+.cont4{
+  /* width: 100%;
+  height: 100%; */
+  padding:5rem 1rem;
+  top: 0;
+  /* position: absolute; */
+  background-color: white;
+  /* background: rgb(62,118,255);
+  background: -moz-linear-gradient(90deg, rgba(62,118,255,0.908000700280112) 12%, rgba(59,38,255,0.9640231092436975) 50%, rgba(91,50,255,0.9612219887955182) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(62,118,255,0.908000700280112) 12%, rgba(59,38,255,0.9640231092436975) 50%, rgba(91,50,255,0.9612219887955182) 100%);
+  background: linear-gradient(90deg, rgba(62,118,255,0.908000700280112) 12%, rgba(59,38,255,0.9640231092436975) 50%, rgba(91,50,255,0.9612219887955182) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3e76ff",endColorstr="#5b32ff",GradientType=1); */
+  /* background: rgb(53,210,129); */
+  /* background: -moz-linear-gradient(90deg, rgba(53,210,129,0.908) 12%, rgba(68,252,213,0.9640) 50%, rgba(49,213,200,0.9640) 100%); */
+  /* background: -webkit-linear-gradient(90deg, rgba(53,210,129,0.708) 12%, rgba(68,252,213,0.8040) 50%, rgba(49,213,200,0.8040) 100%); */
+  /* background: linear-gradient(90deg, rgba(53,210,129,0.908) 12%, rgba(68,252,213,0.9640) 50%, rgba(49,213,200,0.9640) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#35d281",endColorstr="#31d5c8",GradientType=1); */
+  z-index: 11;
+}
+.cont4>div>div{
+  padding: 3rem;
+}
+.cont4>div>div>img{
+  width:120px;
+}
+.cont4>div>div>p{
+  /* discription of the 3 svgs */
+  margin-top: 2rem;
+  line-height: 1.5;
+  text-align: left;
+}
+.certificates{
+  margin: 2rem 1rem 2rem 1rem;
+}
+.cert1,.cert2{
+  margin: 15px;
+  width: 90%;
+  border-radius: 5px;
+}
+.div_gif{
+  padding-top: 20px;
+}
+.handshake_svg{
+  margin-top: 18px;
+}
+
+.first_left_half{
+  padding:7rem 4rem 4rem;
+}
+.first_left_half_heading{
+  color: white;
+  font-size: 6rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+}
+
+.video_section{
+
+}
+.video_section_wrapper{
+
+}
+.video_heading{
+  font-weight: bold;
+  font-size: 40px;
+}
+.div_gif>img{
+  border-radius: 14px;
+}
+/* ------------------------------------------------------------------------------------------------------- */
+/* -------------------------------SERVICES SECTION-------------------------------------------------------- */
+/*------------------------------------------------------------------------------------------------------- */
+.services_fluid_cont{
+  padding: 2rem;
+}
+.services_wrapper{
+  padding: 2rem;
+  background-color: white;
+  font-family: "Montserrat";
+
+}
+.services_heading{
+  padding:1rem 0.5rem;
+  margin: 3rem 0 1.5 0;
+  font-family: "Caladea","Montserrat";
+}
+.the_service{
+  padding:2rem 4rem;
+}
+.the_service>div{
+  font-family: "Montserrat";
+  padding: 1rem 3.5rem 1rem 3.5rem;
+}
+.the_service>div>button{
+  width: 75%;
+}
+/* -----------------------------------COLLAPEABLE COLLAPEABLE-------------------------------------------- */
+
+.faq_questions{
+  margin-top: 4rem;
+  padding: 1.5rem 1.5rem 1.5rem 4rem;
+  background-color: white;
+  border-radius: 0 30px 30px 0;
+}
+.faq_question{
+  width: 100%;
+  margin: 2rem 0;
+}
+.faq_question>button{
+  width: 100%;
+}
+
+
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+
+}
+/* .active:after {
+  content: "\2212";
+} */
+.answer {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+/* -----------------------------------COLLAPEABLE COLLAPEABLE end end end end end-------------------------------------------- */
+
+
+
+
+
+@media (max-width:992px) {
+  .carousel-item{
+    margin: 5rem 0;
+  }
+  .carousel-item>img{
+    width: 100%;
+  }
+  .iframe-rwd  {
+  position: relative;
+  padding-bottom: 100.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  }
+  .iframe-rwd iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 55%;
+  }
+  .contact_area{
+    margin-top: -2rem;
+    margin-left: 0;
+    padding-top: 3rem;
+
+  }
+  .contact_area_sub_left,.contact_area_sub_right{
+    padding-top: 1.8rem;
+    padding-bottom: 1.8rem
+  }
+  .faq_section:first-child{
+    width: 100%;
+  }
+  .how_hair_loss{
+    width: 100%;
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .sub_row{
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .sub_row2{
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .happy_img_container{
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .sub_row3>div>img{
+    width: 95%;
+  }
+  .sub_row3>div{
+    /* text-align: left; */
+    margin-top: 2rem;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 2rem 0;
+    width: 100%;
+  }
+  .how_hair_loss>p,.how_hair_loss>h2{
+    margin: 1rem 0;
+
+  }
+  .sub_row4_heading{
+    margin: 2.5rem 0;
+
+  }
+  .sub_row>div>img{
+    width: 100%;
+    border-radius: 10px;
+  }
+  .sub_row2>div{
+    padding: 3rem 2.5rem;
+  }
+
+  .slideshow-container {
+    padding: 0;
+    margin: 0;
+    top:7rem;
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    border-radius: 20px;
+  }
+
+  .land-1{
+    margin: 0;
+    padding:0.5rem;
+  }
+  .land-2{
+    margin-top: 3rem;
+    padding: 0.5rem;
+  }
+  .first_left_half{
+    padding: 1rem 0 1rem 0;
+    margin-top:6rem;
+    line-height: 1.5;
+  }
+  .first_left_half_heading{
+    padding: 0;
+  }
+  .certificates{
+    margin: 0;
+    padding: 0;
+  }
+  .certificates>div{
+    padding: 0;
+    margin-top: 1rem;
+  }
+  .cert1,.cert2{
+    margin: 15px;
+    width: 60%;
+    border-radius: 10px;
+  }
+  .video_section{
+
+  }
+  .video_section_wrapper{
+
+  }
+  .video_heading{
+    font-weight: bold;
+    font-size: 40px;
+    padding: 1rem 0 1rem 0;
+  }
+  .video_heading>h4{
+    margin: 1.5rem 0 1rem 0;
+  }
+  .div_gif>img{
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 4rem;
+    padding-top:1rem;
+    padding-bottom: 2rem;
+    border-radius: 15px;
+  }
+
+  .services_fluid_cont{
+    padding: 2.5rem 0.3rem;
+  }
+  .services_wrapper{
+    padding: 0.5rem 0.5rem;
+    background-color: white;
+    font-family: "Caladea","Montserrat";
+
+  }
+  .services_heading{
+    padding:1rem 0.5rem;
+    margin: 1.5rem;
+    font-family: "Caladea","Montserrat";
+  }
+  .the_service{
+    padding:1.5rem;
+  }
+  .the_service>div{
+    font-family: "Montserrat";
+    padding: 1rem;
+  }
+  .the_service>div>button{
+    width: 75%;
+  }
+  /* -------------------------Media Query Ends---------------------------- */
+}
